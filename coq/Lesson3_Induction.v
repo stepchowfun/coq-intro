@@ -47,7 +47,7 @@ Check nat_ind.
 
 Theorem n_plus_zero : forall n, n + 0 = n.
 Proof.
-  intros.
+  intro.
 
   (*
     Instead of applying `nat_ind` directly,
