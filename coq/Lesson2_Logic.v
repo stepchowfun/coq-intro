@@ -87,7 +87,7 @@ Proof.
     into the context.
   *)
   intro.
-  
+
   (*
     H is a proof of the goal;
     let's use it!
