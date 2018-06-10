@@ -21,6 +21,17 @@ Check scons "foo" snil.
 Check scons "hello" (scons "world" snil).
 
 (*
+  Here's a function which produces an slist
+  of a given length containing empty strings.
+*)
+
+Fixpoint empty_strings n1 : slist n1 :=
+  match n1 with
+  | O => snil
+  | S n2 => scons "" (empty_strings n2)
+  end.
+
+(*
   Here's a function which concatenates
   two slists. This demonstrates how to
   do dependent pattern matching.
